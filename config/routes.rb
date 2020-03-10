@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'pages/help'
 
   resources :users
+  resources :topics
 
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
