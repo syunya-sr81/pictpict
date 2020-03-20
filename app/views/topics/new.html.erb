@@ -14,11 +14,13 @@
             <%= f.text_area :description, class: 'form-control' %>
           </div>
           
-          <% if logged_in? %>
-           <li>
-           <%= f.submit '投稿', class: 'btn btn-black btn-block' %>
-           </li>
-           <% end %>
+          <% if logged_in? %> 
+          <li>
+          <%= f.submit '投稿', class: 'btn btn-black btn-block' %>
+          </li>
+          <% else %>
+          <% end %>
+
         <% end %>
       </div>
     </div>
